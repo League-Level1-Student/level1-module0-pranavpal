@@ -8,11 +8,12 @@ public class Houses {
 	Robot rob = new Robot();
 	public void run() {
 		
+		rob.setX(0);
 		rob.setSpeed(50);
 		rob.penDown();
-	//int i;
-	//for (i=0; i < 10; i++) {
-		drawPointyRoof("small", "green");
+		
+		
+		drawHouse("small", "green");
 		drawHouse("medium", "red");
 		drawHouse("large", "pink");
 		drawHouse("small", "cyan");
@@ -35,8 +36,8 @@ public class Houses {
 		}
 		if(height.equals("large")) {
 			x=250;
-
 		}
+		
 		if(color.equals("red")) {
 			rob.setPenColor(Color.RED);
 		}
@@ -67,20 +68,34 @@ public class Houses {
 		if(color.equals("green")) {
 			rob.setPenColor(Color.green);
 		}
+	
 
-
-		
-		rob.move(x);
-		rob.turn(90);
-		rob.move(x/5);
-		rob.turn(90);
-		rob.move(x);
-		rob.turn(-90);
-		rob.move(x/10);
-		rob.turn(-90);
+	
+		if (height.equals("large")) {
+			rob.move(x);
+			rob.turn(45);
+			rob.move(x/5);
+			rob.turn(90);
+			rob.move(x/5);
+			rob.turn(45);
+			rob.move(x);
+			rob.turn(-90);
+			rob.move(x/10);
+			rob.turn(-90);
+		} else {
+			rob.move(x);
+			rob.turn(90);
+			rob.move(x/5);
+			rob.turn(90);
+			rob.move(x);
+			rob.turn(-90);
+			rob.move(x/10);
+			rob.turn(-90);
+		}
 		
 	}
-	public void drawPointyRoof(String height, String color) {
+	}
+	/*public void drawPointyRoof(String height, String color) {
 		int x=0;
 		if(height.equals("small")) {
 			x=60;
@@ -132,4 +147,4 @@ public class Houses {
 		rob.move(x/10);
 		rob.turn(-90);
 	}
-}
+} */
