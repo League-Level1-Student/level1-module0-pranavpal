@@ -56,7 +56,7 @@ public class PhotoQuiz {
 
 		// 10. find another image and create it (might take more than one line
 		// of code)
-			String image2 = new String("https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2020/07/Luigi-Super-Mario-64-Render.jpg");
+			String image2 = new String("https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Luigi_NSMBUDX.png/220px-Luigi_NSMBUDX.png");
 			Component y;
 			y = createImage(image2);
 
