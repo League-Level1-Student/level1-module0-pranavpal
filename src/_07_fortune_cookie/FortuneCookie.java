@@ -20,8 +20,8 @@ import javax.swing.JPanel;
 public class FortuneCookie implements ActionListener {
     public void showButton() {
         System.out.println("Button clicked");
-   }
-    {
+   
+    
 		// 1. Declare and initialize an object of the JFrame class
 		JFrame frame = new JFrame();
 
