@@ -12,7 +12,6 @@ public class Houses {
 		rob.setSpeed(50);
 		rob.penDown();
 		
-		
 		drawHouse("small", "green");
 		drawHouse("medium", "red");
 		drawHouse("large", "pink");
