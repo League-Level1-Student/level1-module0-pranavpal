@@ -46,18 +46,21 @@ public class cutenessTV implements ActionListener {
 
 		JButton buttonPressed = (JButton) arg0.getSource();
 		if (buttonPressed.equals(button1)) {
-			playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");	
+			//showDucks();
+			playVideo("The Duck Song Video is Playing");	
 		}
 		if (buttonPressed.equals(button2)) {
-			playVideo("https://www.youtube.com/watch?v=cBkWhkAZ9ds");
+			//showFrog();
+			playVideo("Cute Frog Video is Playing");
 		}
 		if (buttonPressed.equals(button3)) {
-			playVideo("https://www.youtube.com/watch?v=a-xWhG4UU_Y");
+			//showFluffyUnicorns();
+			playVideo("Pink Fluffy Unicorns Video is Playing");
 		}
 		
 	}
 	
-	/* void showDucks() {
+	 void showDucks() {
 	     playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
 	}
 
@@ -68,9 +71,11 @@ public class cutenessTV implements ActionListener {
 	void showFluffyUnicorns() {
 	     playVideo("https://www.youtube.com/watch?v=a-xWhG4UU_Y");
 	}
-*/
+
 	void playVideo(String videoID) {
+		System.out.print(videoID);
 	     
+		/*
 	     // Workaround for Linux because "Desktop.getDesktop().browse()" doesn't
 	     //work on some Linux implementations
 	     try {
@@ -85,6 +90,7 @@ public class cutenessTV implements ActionListener {
 	     }      } catch (Exception e) {
 	          e.printStackTrace();
 	     }
+	     */
 	}
 }
 	
