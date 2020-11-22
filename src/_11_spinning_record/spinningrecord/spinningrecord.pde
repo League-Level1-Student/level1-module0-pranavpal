@@ -13,7 +13,11 @@ song = minim.loadFile("awesomeTrack.mp3", 512);
 }
                                                  
 void draw() {
- image(pictureOfRecord, 0, 0);
+  if (mousePressed) {
+  rotateImage(pictureOfRecord, angle);
+  image(pictureOfRecord, 0, 0);
+  angle+=90;
+ }
 }
  void rotateImage(PImage image, int amountToRotate) {
         translate(width/2, height/2);
